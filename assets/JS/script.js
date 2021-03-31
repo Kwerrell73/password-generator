@@ -17,7 +17,7 @@ var confirmLowerCase;
 function generatePassword() {
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
-  // if answer is outside the parameters 
+  // loop to run if answer is outside the parameters 
   while (confirmLength <= 7 || confirmLength >= 128) {
     alert("Password length must be between 8-128 characters Try again");
     var confirmLength = (prompt("How many characters would you like your password to contain?"));
@@ -42,15 +42,7 @@ function generatePassword() {
   }
   //  password parameters 
   var passwordCharacters = []
-
-  if (confirmSpecialCharacter) {
-    passwordCharacters = passwordCharacters.concat(specialChar)
-  }
-
-  if (confirmNumericCharacter) {
-    passwordCharacters = passwordCharacters.concat(number)
-  }
-
+  
   if (confirmLowerCase) {
     passwordCharacters = passwordCharacters.concat(alphaLow)
   }
@@ -59,6 +51,14 @@ function generatePassword() {
     passwordCharacters = passwordCharacters.concat(alphaUp)
   }
 
+
+  if (confirmSpecialCharacter) {
+    passwordCharacters = passwordCharacters.concat(specialChar)
+  }
+
+  if (confirmNumericCharacter) {
+    passwordCharacters = passwordCharacters.concat(number)
+  }
   console.log(passwordCharacters)
 
   // Empty string to be filled based on for loop selecting random characters from the array
