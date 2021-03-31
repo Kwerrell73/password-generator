@@ -2,12 +2,13 @@
 Program to generate password.
 
 ## Purpose
-A website that generates secure passwords.
+An application that generates random passwords, based on criteria selected.
 
 
 ## Built With
 * HTML
 * CSS
+* JavaScript
 
 ## Website
 https://kwerrell73.github.io/password-generator/.
