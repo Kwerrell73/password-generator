@@ -19,3 +19,6 @@ Made with ❤️ by Kellie Werrell
 ### ©️2021 Password Generator
 
 
+![](images/github-small.png)
+or
+<img src="images/github-small.png" width="100">
