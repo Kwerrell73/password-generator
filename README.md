@@ -13,12 +13,11 @@ An application that generates random passwords, based on criteria selected.
 ## Website
 https://kwerrell73.github.io/password-generator/.
 
+## Screenshot
+![](./assets/images/screenshots/passgen.png)
+
 ## Contribution
 Made with ❤️ by Kellie Werrell
 
 ### ©️2021 Password Generator
 
-
-![](images/github-small.png)
-or
-<img src="images/github-small.png" width="100">
