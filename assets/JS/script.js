@@ -15,29 +15,29 @@ var confirmLowerCase;
 
 // Prompt, allows user to select how many characters they would like in their password
 function generatePassword() {
-  var confirmLength = (prompt("How many characters would you like your password to contain?"));
+  var confirmLength = (prompt("How many characters would you like your password to contain? NOTE: Answer must be between 8 and 128 characters."));
 
   // loop to run if answer is outside the parameters 
   while (confirmLength <= 7 || confirmLength >= 128) {
     alert("Password length must be between 8-128 characters Try again");
-    var confirmLength = (prompt("How many characters would you like your password to contain?"));
+    var confirmLength = (prompt("How many characters would you like your password to contain? NOTE: Answer must be between 8 and 128 characters."));
   }
   // Repeat back how many characters the user chose  
   alert(`Your password will have ${confirmLength} characters`);
 
   // Determine parameters of password 
-  var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
-  var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
-  var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
-  var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");
+  var confirmLowerCase = confirm("Click OK if you would like to include lowercase characters, otherwise click cancel.");
+  var confirmUpperCase = confirm("Click OK if you would like to include uppercase characters, otherwise click cancel.");
+  var confirmSpecialCharacter = confirm("Click OK if you would like to include special characters, otherwise click cancel.");
+  var confirmNumericCharacter = confirm("Click OK if you would like to include numeric characters, otherwise click cancel.");
 
   // If answer is outside the parameters 
   while (confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
     alert("You must choose at least one parameter");
-    var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
-    var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
-    var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
-    var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");
+    var confirmLowerCase = confirm("Click OK if you would like to include lowercase characters, otherwise click cancel.");
+    var confirmUpperCase = confirm("Click OK if you would like to include uppercase characters, otherwise click cancel.");
+    var confirmSpecialCharacter = confirm("Click OK if you would like to include special characters, otherwise click cancel.");
+    var confirmNumericCharacter = confirm("Click OK if you would like to include numeric characters, otherwise click cancel.");
 
   }
   //  password parameters 
