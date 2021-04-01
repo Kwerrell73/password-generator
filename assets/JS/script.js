@@ -15,12 +15,12 @@ var confirmLowerCase;
 
 // Prompt, allows user to select how many characters they would like in their password
 function generatePassword() {
-  var confirmLength = (prompt("How many characters would you like your password to contain? NOTE: Answer must be between 8 and 128 characters."));
+  var confirmLength = (prompt("How many characters would you like your password to contain?  \n NOTE: Answer must be between 8 and 128 characters."));
 
   // loop to run if answer is outside the parameters 
   while (confirmLength <= 7 || confirmLength >= 128) {
     alert("Password length must be between 8-128 characters Try again");
-    var confirmLength = (prompt("How many characters would you like your password to contain? NOTE: Answer must be between 8 and 128 characters."));
+    var confirmLength = (prompt("How many characters would you like your password to contain? \n NOTE: Answer must be between 8 and 128 characters."));
   }
   // Repeat back how many characters the user chose  
   alert(`Your password will have ${confirmLength} characters`);
@@ -62,7 +62,7 @@ function generatePassword() {
   console.log(passwordCharacters)
 
   // Empty string to be filled based on for loop selecting random characters from the array
-  var randomPassword = ""
+  var randomPassword = "";
 
   for (var i = 0; i < confirmLength; i++) {
     randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
