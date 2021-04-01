@@ -15,7 +15,7 @@ https://kwerrell73.github.io/password-generator/.
 
 ## Screenshot
 ![](./assets/images/screenshots/passgen.png)
-<img src>
+<img src = "./assets/images/screenshots/passgen.png" />
 
 ## Contribution
 Made with ❤️ by Kellie Werrell
